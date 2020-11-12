@@ -15,14 +15,3 @@ OPTIONS = (
     ("Вершины додекаэдра", 8),
     ("Додекаэдр", 9),
 )
-
-"""
-AUTHORS
-    Description:
-    The tuple contains tuples with the role description and value.
-    Use for the labels text.
-"""
-AUTHORS = (
-    ("Разработчики", "Горохов Д. И.\n Баранов А. Ю."),
-    ("Научный руководитель", " Милосердов Е.П."),
-)

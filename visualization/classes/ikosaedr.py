@@ -29,9 +29,6 @@ class Iko(Figure):
                     index = start_index + pls_dots_list.index(dot)
                 index_list.append(index)
 
-            # index_list = [start_index + pls_dots_list.index(dot)
-            #               for dot in pls_dots_list]
-
             new_pls = [
                 [index_list[0], index_list[3], index_list[5]],
                 [index_list[3], index_list[1], index_list[4]],
@@ -44,15 +41,3 @@ class Iko(Figure):
             start_index += 6
 
         return new_dot_list, new_pls_list
-
-
-if __name__ == "__main__":
-    i = Iko(DOTS, PLS_BY_DOTS)
-    new_era = Iko(*i.explosion())
-    new_era.radius = i.radius
-    # new_era.draw()
-    u = Iko(*new_era.explosion())
-    # u.draw()
-    u.radius = i.radius
-    o = Figure(*u.explosion())
-    o.draw()
